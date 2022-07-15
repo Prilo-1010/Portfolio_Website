@@ -1,0 +1,27 @@
+.footerItems1 {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.flinks {
+    padding: 8px;
+    color: #868383;
+    font-size: 19px;
+}
+
+.flinks:hover {
+    color: #8d7908;
+}
+
+.footerItems2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerItems2>h3 {
+    color: #868383;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}

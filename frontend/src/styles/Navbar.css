@@ -1,0 +1,118 @@
+.navbar {
+    background-color: #141212;
+    width: 200px;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    z-index: 999;
+    transition: all 1s ease-out;
+    transform: translateY(0px);
+}
+
+.navbar-active {
+    width: auto;
+    height: 40px;
+    background-color: #141212;
+    position: fixed;
+}
+
+.navbar-active i {
+    color: #868383;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    font-size: 22px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: inset 0 0 0 1000px #23232339;
+}
+
+.image>h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #141212;
+    background-color: #8d7908d2;
+    position: relative;
+    top: 165px;
+}
+
+.navLinks ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.navLinks ul li {
+    padding: 13px 0;
+}
+
+.links {
+    color: #868383;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.links:hover, .active {
+    color: #8d7908;
+    font-weight: 700;
+}
+
+.footer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 30px;
+    width: 180px;
+}
+
+.border {
+    height: 4px;
+    color: #868383;
+    width: 100%;
+    border-top: 1px inset #868383;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        margin-top: 50px;
+        display: none;
+        transition: all 2s ease-out;
+    }
+
+    .navbar-active {
+        width: 100%;
+        height: 50px;
+        background-color: #141212;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .navbar-active i {
+        color: #868383;
+        position: absolute;
+        font-size: 23px;
+        padding: 12px 20px;
+        border-left: 1px solid #868383;
+        right: 0px;
+    }
+
+    .footer {
+        bottom: 60px;
+    }
+}

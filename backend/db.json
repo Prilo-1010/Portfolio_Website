@@ -1,0 +1,58 @@
+{
+    "portfolio":[
+        {
+            "id": 1,
+            "title": "CobWev Developers",
+            "image1": "images/CobWeb.png",
+            "image2": "images/CobWeb-Developers.png",
+            "type": "Website",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+        },
+        {
+            "id": 2,
+            "title": "Le Grand Service",
+            "image1": "images/LGSFront.png",
+            "image2": "images/background.jpg",
+            "type": "Website",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+        },
+        {
+            "id": 3,
+            "title": "Lolo Devs",
+            "image1": "images/LOLOFront.png",
+            "image2": "images/back.png",
+            "type": "Website",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 4,
+            "title": "ADV>",
+            "image1": "images/ADVFront.png",
+            "image2": "images/icon3.png",
+            "type": "Logos",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 11,
+            "title": "Kiana",
+            "image1": "images/KIANAFront.png",
+            "image2": "images/back.png",
+            "type": "Logo",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 12,
+            "title": "C'est le Meme",
+            "image1": "images/CLMFront.jpeg",
+            "image2": "images/icon3.png",
+            "type": "Logos",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        }
+ 
+       ]  
+}
+
