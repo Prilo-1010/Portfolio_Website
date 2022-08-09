@@ -69,7 +69,7 @@ function Services() {
               head1="Things I know:"
               text2="Logo Design, Resume Design."
               head2="Analytics Tools:"
-              text3="Adobe Illustrator."
+              text3="Adobe Illustrator, Canva."
             />
           </div>
           <div className='service-head'>

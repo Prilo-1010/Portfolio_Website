@@ -135,13 +135,20 @@ textarea::placeholder {
     font-size: 15px;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
     border: 1px solid #8d7908;
     color: #8d7908;
     padding: 18px 10px;
     font-size: 15px;
 }
+
+textarea:focus{
+    border: 1px solid #8d7908;
+    color: #8d7908;
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
 
 textarea {
     background-color: transparent;

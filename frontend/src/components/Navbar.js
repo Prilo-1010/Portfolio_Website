@@ -41,7 +41,7 @@ function Navbar() {
 
             <div className='navbar' style={click ? { display: 'none'  } : { display: 'table' }}  >
                 <div className="image" style={{ backgroundImage: `url(${main})`, backgroundSize: 'cover', height: '200px' }} onClick={closeMobileMenu}>
-                    <h1>P. Lolo</h1>
+                    <h1><a href='/admin' style={{textDecoration: "none"}}>P.</a> Lolo</h1>
                 </div>
                 <div className="navLinks">
                     <ul>

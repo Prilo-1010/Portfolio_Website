@@ -10,7 +10,7 @@ function Contact() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState(null);
   // const [loading, setLoading] = useState(true)
-  // const [emptyFields, setEmptyFields] = useState([]);
+  const [emptyFields, setEmptyFields] = useState([]);
 
   const navigate = useNavigate()
 
@@ -37,7 +37,7 @@ function Contact() {
       setSubject('')
       setEmail('')
       setError(null)
-      // setEmptyFields(json.emptyFields)
+      setEmptyFields(json.emptyFields)
       navigate('/')
     }
   }
@@ -75,7 +75,7 @@ function Contact() {
                 <div className='contact-fill1'>
                   <div className='fill'>
                     <h3 className='fill-text'>Full Name</h3>
-                    <input class="app-form-control" 
+                    <input className="app-form-control"
                     type="text" value={fullname} placeholder='Prosper Lolo' onChange={(e) => setFullName(e.target.value)} />
                   </div>
                   <div className='filla'>

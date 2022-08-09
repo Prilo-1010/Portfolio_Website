@@ -19,9 +19,10 @@ function About() {
         method: "GET",
         responseType: "blob",
      }).then((res)=>{
-        FileDownload(res.date, "Resume.pdf")
+        FileDownload(res.data, "Prosper Resume.pdf")
      })
     }
+
     return (
         <>
             <div className='about' >

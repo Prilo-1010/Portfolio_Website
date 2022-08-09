@@ -40,9 +40,14 @@
     justify-content: center;
     margin: auto;
     color: #141212;
-    background-color: #8d7908d2;
+    background-color: #8d7908b9;
     position: relative;
     top: 165px;
+}
+
+
+.image>h1>a {
+    color: #141212;
 }
 
 .navLinks ul {
@@ -67,7 +72,7 @@
 
 .links:hover, .active {
     color: #8d7908;
-    font-weight: 700;
+    transition: all .2s ease-in-out;
 }
 
 .footer {

@@ -10,8 +10,10 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import { PulseLoader } from 'react-spinners';
+import AdminPanel from './pages/AdminPanel';
 
 function App() {
+
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -40,8 +42,11 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
+            <Route path='/admin/*' element={<AdminPanel />} />
           </Routes>
-        </Router>}
+        </Router>
+        
+        }
     </>
   );
 }
