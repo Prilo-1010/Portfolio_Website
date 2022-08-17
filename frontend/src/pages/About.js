@@ -69,7 +69,6 @@ function About() {
                     <div className='skills'>
                         <div className='skills-text'>
                             <h1>My Skills</h1>
-                            <div className='text-border'></div>
                         </div>
 
                         <div className='skills-set'>

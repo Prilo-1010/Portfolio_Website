@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <>
       <div className='footerItems1'>
-        <a className='flinks' href="http://www.instagram.com/lolo_prilo">
+        <a className='flinks' href="https://www.instagram.com/lolo_prilo">
           <li><i className="fa-brands fa-instagram"></i></li>
         </a>
-        <a className='flinks' href="http://www.twitter.com/ProsperLolo">
+        <a className='flinks' href="https://www.twitter.com/ProsperLolo">
           <li><i className="fa-brands fa-twitter"></i></li>
         </a>
-        <a className='flinks' href="http://www.linkedin.com/in/prosperlolo">
+        <a className='flinks' href="https://www.linkedin.com/in/prosperlolo">
           <li><i className="fa-brands fa-linkedin"></i></li>
         </a>
         <a className='flinks' href="https://github.com/Prilo-1010">

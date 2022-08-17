@@ -2,7 +2,7 @@
   margin-left: 200px;
   padding: 0;
   background-color: #202020d5;
-  height: 100vh;
+  height: auto;
 }
 
 .work {
@@ -68,6 +68,7 @@
   background-color: transparent;
   color: #8d7908;
   padding: 8px;
+  height: 100vh;
 }
 
 .btext>h2 {
@@ -102,7 +103,7 @@
 }
 
 .image-con {
-  width: 100%;
+  width: 70%;
   padding-top: 20px;
 }
 

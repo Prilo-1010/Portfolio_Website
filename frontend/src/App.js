@@ -42,7 +42,7 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
-            <Route path='/admin/*' element={<AdminPanel />} />
+            <Route exact path='/admin/*' element={<AdminPanel />} />
           </Routes>
         </Router>
         

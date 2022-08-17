@@ -1,7 +1,7 @@
 import '../styles/Contact.css';
 import { Button } from '../components/Button';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
   const [fullname, setFullName] = useState('');
@@ -9,7 +9,6 @@ function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState(null);
-  // const [loading, setLoading] = useState(true)
   const [emptyFields, setEmptyFields] = useState([]);
 
   const navigate = useNavigate()
@@ -30,6 +29,7 @@ function Contact() {
 
     if (!response.ok) {
       setError(json.error)
+      setEmptyFields(json.emptyFields)
     }
     if (response.ok) {
       setFullName('')
@@ -41,9 +41,7 @@ function Contact() {
       navigate('/')
     }
   }
-  // useEffect(()=>{
-  //   setLoading(false)
-  // })
+  
   return (
     <>
       <div className='contact'>
@@ -61,9 +59,8 @@ function Contact() {
               <p>I’m interested in freelance opportunities especially ambitious or large projects. <br></br> However, if you have other request or question, don’t hesitate to use the form.</p>
               <div className='contact-icon'>
                 <ul>
-                  {/* <li><i class="fa-solid fa-location-dot"></i>76 Albert Street</li> */}
-                  <li><i class="fa-solid fa-envelope"></i>loloprosper17@gmail.com</li>
-                  <li><i class="fa-solid fa-mobile-screen-button"></i>(+27) 659 444 353</li>
+                  <li><i className="fa-solid fa-envelope"></i>loloprosper17@gmail.com</li>
+                  <li><i className="fa-solid fa-mobile-screen-button"></i>(+27) 659 444 353</li>
                 </ul>
               </div>
             </div>
@@ -75,18 +72,18 @@ function Contact() {
                 <div className='contact-fill1'>
                   <div className='fill'>
                     <h3 className='fill-text'>Full Name</h3>
-                    <input className="app-form-control"
-                    type="text" value={fullname} placeholder='Prosper Lolo' onChange={(e) => setFullName(e.target.value)} />
+                    <input className={ emptyFields.includes('fullname') ?"app-form-error": "app-form-control"}
+                    type="text" value={fullname} placeholder="Prosper Lolo" onChange={(e) => setFullName(e.target.value)} />
                   </div>
                   <div className='filla'>
                     <h3 className='fill-text'>Your Email</h3>
-                    <input class="app-form-control" type="email" value={email} placeholder='info@email.com' onChange={(e) => setEmail(e.target.value)}/>
+                    <input className={ emptyFields.includes('email') ?"app-form-error": "app-form-control"} type="email" value={email} placeholder='info@email.com' onChange={(e) => setEmail(e.target.value)}/>
                   </div>
                 </div>
                 <h3 className='fill-text'>Subject</h3>
-                <input class="app-form-control" type="text" value={subject} placeholder='Web Develop' onChange={(e) => setSubject(e.target.value)}/>
+                <input className={ emptyFields.includes('subject') ?"app-form-error": "app-form-control"} type="text" value={subject} placeholder='Web Develop' onChange={(e) => setSubject(e.target.value)}/>
                 <h3 className='fill-text'>How can I help you?</h3>
-                <textarea class="app-form-control" type="text" value={message} placeholder='Message' cols="20" rows="5" onChange={(e) => setMessage(e.target.value)}></textarea>
+                <textarea className={ emptyFields.includes('message') ?"app-form-error": "app-form-control"} type="text" value={message} placeholder='Message' cols="20" rows="10" onChange={(e) => setMessage(e.target.value)}></textarea>
                 <div className='contact-button'>
                 {error && <div className='error'>{error}</div>}
                 <Button

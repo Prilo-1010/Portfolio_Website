@@ -30,7 +30,7 @@ function Work({ project }) {
                                     buttonSize='btn-medium'
                                 onClick={() => { navigate('/portfolio/') }}
                                 >
-                                    Visit Website
+                                    Visit
                                 </Button>
                             </div>
                         </div>

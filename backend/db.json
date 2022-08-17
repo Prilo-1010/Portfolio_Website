@@ -2,15 +2,15 @@
     "portfolio":[
         {
             "id": 1,
-            "title": "CobWev Developers",
+            "title": "CobWeb Developers",
             "image1": "images/CobWeb.png",
             "image2": "images/CobWeb-Developers.png",
             "type": "Website",
-            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            "details": "CobWeb Developers is an IT company that provide web design, web developmen and various IT solution.\n They wanted to present new way of seeing technology in the eyes of the web."
         },
         {
             "id": 2,
-            "title": "Le Grand Service",
+            "title": "Les Grand Services",
             "image1": "images/LGSFront.png",
             "image2": "images/background.jpg",
             "type": "Website",
@@ -23,19 +23,17 @@
             "image2": "images/back.png",
             "type": "Website",
             "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
-            
         },
         {
             "id": 4,
-            "title": "ADV>",
+            "title": "ADV",
             "image1": "images/ADVFront.png",
             "image2": "images/icon3.png",
-            "type": "Logos",
+            "type": "Website",
             "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
-            
         },
         {
-            "id": 11,
+            "id": 5,
             "title": "Kiana",
             "image1": "images/KIANAFront.png",
             "image2": "images/back.png",
@@ -44,22 +42,57 @@
             
         },
         {
-            "id": 12,
+            "id": 6,
             "title": "C'est le Meme",
             "image1": "images/CLMFront.jpeg",
             "image2": "images/icon3.png",
-            "type": "Logos",
+            "type": "Logo",
             "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
             
         },
         {
-            "id": 13,
-            "title": "Spotless",
-            "image1": "images/SPOTLESSFront.png",
+            "id": 7,
+            "title": "App Authentication",
+            "image1": "images/Mobile1FRONT.png",
             "image2": "images/icon3.png",
-            "type": "Logos",
+            "type": "Mobile App",
             "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
             
+        },
+        {
+            "id": 8,
+            "title": "Kiana Shop",
+            "image1": "images/KianaShopFRONT.png",
+            "image2": "images/icon3.png",
+            "type": "Ecommerce",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 9,
+            "title": "LinkedIn Header",
+            "image1": "images/LinkedInFRONT.png",
+            "image2": "images/back.png",
+            "type": "Header",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 10,
+            "title": "Les Grand Service ",
+            "image1": "images/LGSlogoFRONT.jpeg",
+            "image2": "images/icon3.png",
+            "type": "Logo",
+            "details": "Tina expanded her business to include videography as well as photography and needed a redesign of her site to reflect that"
+            
+        },
+        {
+            "id": 11,
+            "title": "Spotless",
+            "image1": "images/SPOTLESSFront.png",
+            "image2": "images/SPOTLESSFront.png",
+            "type": "Logo",
+            "details": "Spotless is a car wash company that needed a logo to show their work and yes they do make your car spotless" 
         }
  
        ]  

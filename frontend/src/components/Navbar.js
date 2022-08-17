@@ -35,16 +35,16 @@ function Navbar() {
         <>
             {navbar && (
             <div className='navbar-active' onClick={handleClick}>
-                <i className={click ? 'fas fa-bars' : 'fas fa-bars'} style={click ? { color: '#868383' } : { color: '#8d7908' }} />
+                <i className={click ? 'fas fa-bars' : 'fas fa-bars'} style={click ? { color: '#8d7908 ' } : { color: '#868383' }} />
             </div>
             )}
 
-            <div className='navbar' style={click ? { display: 'none'  } : { display: 'table' }}  >
+            <div className='navbar' style={window.innerWidth <= 800 && !click ? { display: 'none'  } : { display: 'block' }}  >
                 <div className="image" style={{ backgroundImage: `url(${main})`, backgroundSize: 'cover', height: '200px' }} onClick={closeMobileMenu}>
                     <h1><a href='/admin' style={{textDecoration: "none"}}>P.</a> Lolo</h1>
                 </div>
                 <div className="navLinks">
-                    <ul>
+                    <ul onClick={handleClick}>
                         <li><NavLink className='links' to='/' onClick={closeMobileMenu}>HOME</NavLink></li>
                         <div className='border'></div>
                         <li><NavLink className='links' to='/about' onClick={closeMobileMenu}>ABOUT ME</NavLink></li>
